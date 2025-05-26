@@ -2,7 +2,7 @@
 #include "caesarCipher.h"
 
 namespace Caesar {
-
+// Функція для введення тексту користувачем
     std::string inputText() {
         std::string text;
         std::cout << "Введіть рядок для шифрування: ";
@@ -12,7 +12,7 @@ namespace Caesar {
         }
         return text;
     }
-
+// Функція для шифрування тексту методом Цезаря
     std::string caesarEncrypt( std::string& text, int shift) {
         if (shift < 0) {
             throw std::invalid_argument("Зсув має бути невід'ємним.");
@@ -27,7 +27,7 @@ namespace Caesar {
         }
         return result;
     }
-
+// Функція для виведення зашифрованого тексту
     void outputText( std::string& encryptedText) {
         std::cout << "Зашифрований текст: " << encryptedText << std::endl;
     }
