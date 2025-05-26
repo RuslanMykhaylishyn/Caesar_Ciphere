@@ -18,7 +18,7 @@ int main() {
         outputText(encrypted);
     }
     catch (std::exception& e) {
-        std::cerr << "Помилка: " << e.what() << std::endl;
+        std::cerr << "Помилка: " << e.what() << std::endl; 
         return 1;
     }
 
